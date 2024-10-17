@@ -2,17 +2,32 @@
 
 Ce projet est une démonstration de l'utilisation de la transformée de Fournier avec Python.
 
-## Tables de matières
-- Explication de la transformée de Fournier
-- Description de l'algo
-- Utilisation
+---
+Arborescence du projet
 
-### Explication de la transformée de Fournier
+![Arborescence du projet](/ressources/arbo.png "Arborescence du projet")
 
-### Formule mathématique
+---
 
-$$X_k = \sum_{n=0}^{N/2-1} E_n e^{-2\pi i k n / (N/2)} + e^{-2\pi i k / N} \sum_{n=0}^{N/2-1} O_n e^{-2\pi i k n / (N/2)}$$
+##### Utilisation 
 
-### Descirption de l'algo
+1 . Cloner le projet
 
-### Utilisation 
+`git clone https://github.com/SapaRandy/FourierRapide.git
+cd FourierRapide`
+
+2 . Exécuter le projet
+
+`python main.py`
+
+--- 
+##### Lancement des tests
+
+
+Pour le tester transformée de Fourier discrète:
+`pytest test1.py`
+
+Pour le tester transformée de Fourier rapide :
+`pytest test2.py`
+
+
